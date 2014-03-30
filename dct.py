@@ -51,7 +51,7 @@ if __name__ == '__main__':
             imageSet.append(basisImg)
     
     '''
-    # Instead of looping, we can choosing one basis(u,v)
+    # Instead of looping, we can choose one basis(u,v)
     v = 0
     u = 0
     basisImg = n_.zeros((n,n))
