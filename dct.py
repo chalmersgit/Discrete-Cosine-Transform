@@ -35,7 +35,7 @@ def dct(x, y, v, u, n):
     
 if __name__ == '__main__':
     print "Running DCT"
-    n = 8 # Assume sqaure image, so we don't have different xres and yres
+    n = 16 # Assume sqaure image, so we don't have different xres and yres
     
     # We can get different frequencies by setting u and v
     # Here, we have a max u and v to loop over and display
@@ -69,7 +69,7 @@ if __name__ == '__main__':
         p_.subplot(displayRows, displayCols, i+1)
         p_.axis('off')
         p_.imshow(imageSet[i],cmap = cm.Greys_r)
+    p_.savefig('_dct_'+str(n)+'x'+str(n)+'.png')
     p_.show()
-    
     print "Complete" 
     
