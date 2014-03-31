@@ -35,7 +35,7 @@ def dct(x, y, v, u, n):
     
 if __name__ == '__main__':
     print "Running DCT"
-    n = 16 # Assume sqaure image, so we don't have different xres and yres
+    n = 16 # Assume square image, so we don't have different xres and yres
     
     # We can get different frequencies by setting u and v
     # Here, we have a max u and v to loop over and display
