@@ -22,7 +22,6 @@ import numpy as n_
 import pylab as p_
 import matplotlib.cm as cm
 
-
 def dct(x, y, v, u, n):
     # Normalisation
     def alpha(a):
@@ -69,7 +68,7 @@ if __name__ == '__main__':
         p_.subplot(displayRows, displayCols, i+1)
         p_.axis('off')
         p_.imshow(imageSet[i],cmap = cm.Greys_r)
-    p_.savefig('_dct_'+str(n)+'x'+str(n)+'.png')
+    p_.savefig('_dct_'+str(n)+'x'+str(n)+'_'+str(maxU)+'x'+str(maxV)+'.png')
     p_.show()
     print "Complete" 
     
