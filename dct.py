@@ -20,6 +20,8 @@ lecture 10. By Guillermo Sapiro from Duke University
 from math import cos,sqrt,pi
 import numpy as n_
 import pylab as p_
+import matplotlib.cm as cm
+
 
 def dct(x, y, v, u, n):
     # Normalisation
@@ -33,7 +35,7 @@ def dct(x, y, v, u, n):
     
 if __name__ == '__main__':
     print "Running DCT"
-    n = 16 # Assume sqaure image, so we don't have different xres and yres
+    n = 8 # Assume sqaure image, so we don't have different xres and yres
     
     # We can get different frequencies by setting u and v
     # Here, we have a max u and v to loop over and display
@@ -66,9 +68,8 @@ if __name__ == '__main__':
     for i in range(0, len(imageSet)):
         p_.subplot(displayRows, displayCols, i+1)
         p_.axis('off')
-        p_.imshow(imageSet[i])
+        p_.imshow(imageSet[i],cmap = cm.Greys_r)
     p_.show()
     
     print "Complete" 
     
-
