@@ -35,12 +35,12 @@ def dct(x, y, v, u, n):
     
 if __name__ == '__main__':
     print "Running DCT"
-    n = 16 # Assume square image, so we don't have different xres and yres
+    n = 8 # Assume square image, so we don't have different xres and yres
     
     # We can get different frequencies by setting u and v
     # Here, we have a max u and v to loop over and display
     # Feel free to adjust
-    maxV = n 
+    maxV = n
     maxU = n
     
     imageSet = []
@@ -49,7 +49,7 @@ if __name__ == '__main__':
             basisImg = n_.zeros((n,n))
             for y in range(0, n):
                 for x in range(0, n):    
-                    basisImg[y,x] = dct(x, y, v, u, n)
+                    basisImg[y,x] = dct(x, y, v, u, max(n, maxV))
             imageSet.append(basisImg)
     
     '''
