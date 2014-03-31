@@ -1,5 +1,5 @@
 '''
-Discete Cosine Transform
+Discrete Cosine Transform
 Author: Andrew Chalmers, 2014
     
 This calculates the DCT at different frequencies in two dimensions. 
